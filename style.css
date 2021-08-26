@@ -15,7 +15,7 @@ img {
 
 .container {
     display: grid;
-    width: 100vw;
+    width: 97vw;
     height: 70vw;
     gap: 5px;
     grid-template-columns: 1fr 150px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
