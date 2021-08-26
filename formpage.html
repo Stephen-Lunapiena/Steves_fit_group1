@@ -5,24 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="nutritionlookup.js" defer ></script> 
+    <script src="main.js" defer> </script>  
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>  
+	<script type="text/javascript" defer></script>
+    
     <title>Work with me</title>
 </head>
+
 <body>
+    <div class="container">
+        <div class="top">
+            <h1>Steves Fitness Group</h1>
+        </div>
+            <div class="navbar">
+                <ul class="menu">
+                    <li class="item"> <a href="index.html">About Me</a></li>
+                    <li class="item"> <a href="nutritionlookup.html">Nutrition Lookup</a></li>
+                    <li class="item"> <a href="formpage.html">Work With Me</a></li>
+                </ul></div>
+                <div class="sidebar" > </div>
+                
+                <div class="maincontent">
+                    <div class="formdiv">
+                        <p><h2>Work with me</h2></p> 
+                        
+                <form id="emailform" >
+                    <label for="name">Your name:</label><br>
+                    <input type="text" size="50" id="name" name="name"><br>
 
-    <form action=”https://formsubmit.co/stephen.lunapiena@gmail.com” method=”POST” id="emailform" >
-        <label for="name">Your name:</label><br>
-        <input type="text" size="50" id="name" name="name" ><br>
-        <label for="email">Your email:</label><br>
-        <input type="text" size="50" id="email" name="email" ><br><br>
-        <label for="subject">What are your fitness goal?</label><br>
-        <input type="text" size="50" id="subject" name="subject" ><br><br>
-        <label for="msg">Message</label><br>
-        <input type="text" size="50" id="msg" name="msg" ><br><br>
-        <button type="submit">Send</button>
-    </form> 
+                    <label for="email">Your email:</label><br>
+                    <input type="text" size="50" id="email" name="email"><br>
+
+                    <label for="subject">What are your fitness goals?</label><br>
+                    <input type="text" size="50" id="subject" name="subject"><br>
+
+                    <label for="msg">Message</label><br>
+                    <input type="text" size="50" id="msg" name="msg"><br>
+
+                    <input type="submit">
+                </form> 
+            </div>
+            </div>
     
-
+            <div class="footer"> 
+                <p>Software Engineering Project for Per Scholas. <br> Author: Stephen Lunapiena</p>
+            </div> 
+        </div> 
 </body>
 </html>
 

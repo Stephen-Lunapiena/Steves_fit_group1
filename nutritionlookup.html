@@ -5,34 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer ></script> 
     <title>Nutrition Lookup</title>
 </head>
 <body>
-<form id="nutrition_form">
-    <label for="msg">Food Ingredient</label><br>
-    <input type="text" size="50" id="food_ingredient" name="msg" ><br><br>
-    <button type="submit">Send</button>
-</form>
+    <div class="container">
+        <div class="top">
+            <h1>Steves Fitness Group</h1>
+        </div>
+            
+            <div class="navbar">
+                <ul class="menu">
+                    <li class="item"> <a href="index.html">About Me</a></li>
+                    <li class="item"> <a href="nutritionlookup.html">Nutrition Lookup</a></li>
+                    <li class="item"> <a href="formpage.html">Work With Me</a></li>
+                </ul></div>
 
+            <div class="maincontent" >
+                <center><h2>Nutrition Lookup</h2> </center>
+                <div id="macros">
+                <form id="nutrition_form">
+                    <label for="msg">Food Ingredient</label><br>
+                    <input type="text" size="50" id="food_ingredient" name="msg" ><br><br>
+                    <button type="submit">Send</button>
+                </form>
+                <ul id="resultsList">
+                    
+                </ul>
+            </div>
+                </div>
 
-<div id="macros"></div>
-
-
-<p>
-
-    Rice
-    <br>
-    Total calories: 260
-    <br> 
-    calories from protein: 22
-    <br> 
-    calories from fat: 5
-    <br> 
-    calories from carbs: 233
-    <br> 
-
-</p>
+                <div class="footer"> 
+                    <p>Software Engineering Project for Per Scholas. <br> Author: Stephen Lunapiena</p>
+                </div> 
 </body>
-<script src="main.js" ></script> 
 
 </html>

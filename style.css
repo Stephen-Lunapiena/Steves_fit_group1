@@ -28,8 +28,6 @@ img {
     
 }
 
-
-
   .top {
     background-image: url("fitladysquat.jpg");
     grid-column-start: 2;
@@ -48,6 +46,11 @@ img {
         
   }
 
+  .formdiv {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
  
 
   .menu {
@@ -64,7 +67,6 @@ img {
     font-size: 20px;
   }
 
-
   /* .sidebar {
     grid-column-start :2;
     grid-column-end: 3;
@@ -74,19 +76,39 @@ img {
   
   .maincontent {
     background-color:#191f2c;
-
     grid-column-start: 2;
     grid-column-end: 9;
     grid-row-start: 6;  
     grid-row-end: 7;
-    
-
-  }
+}
 
   .footer {
+    background-color:#191f2c;
     grid-row-start: 9;
     grid-row-end: 10;
     grid-column-start: 2;
     grid-column-end: 9;  
   } 
 
+  #macros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+#emailform{
+    font-size: 1.2em;
+}
+
+@media all and (max-width: 576px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+
+    }
+}

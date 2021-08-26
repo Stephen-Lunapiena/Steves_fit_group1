@@ -1,14 +1,4 @@
 const form = document.getElementById('nutrition_form')
-// const complaintsList = document.querySelector("#food_ingredient")
-// const resButton = document.querySelector("#showRes")
-
-// function convert(obj) {
-//     return Object.keys(obj).map(key => ({
-//         name: key,
-//         value: obj[key],
-//         type: "foo"
-//     }));
-// }
 
 function display_stuff(obj) {
     var text = '';
@@ -35,7 +25,7 @@ form.addEventListener('submit', (event) => {
     var nutritionData = data 
     var totalNutrientsKCal = nutritionData.totalNutrientsKCal;
 
-    display_stuff(totalNutrientsKCal.ENERC_KCAL);
+    var enerc = display_stuff(totalNutrientsKCal.ENERC_KCAL);
     display_stuff(totalNutrientsKCal.PROCNT_KCAL)
     display_stuff(totalNutrientsKCal.FAT_KCAL)
     display_stuff(totalNutrientsKCal.CHOCDF_KCAL);
@@ -59,6 +49,35 @@ form.addEventListener('submit', (event) => {
 
 
 
+
+
+
+  var x = document.querySelector("#emailform")
+  x.addEventListener("submit", submitForm)
+
+
+  function submitForm(e) {
+      e.preventDefault()
+      let name = document.querySelector("#name").value;
+      let email = document.querySelector("#email").value;
+      let subject = document.querySelector("#subject").value;
+      let msg = document.querySelector("#msg").value;
+      sendEmail(name, subject, email, msg)
+      console.log(email)
+  
+  function sendEmail(name, subject, email, msg) {
+      Email.send({
+          Host: "smtp.gmail.com",
+          Username : "projectest120@gmail.com",
+          Password : "randompw",
+          To : 'projectest120@gmail.com',
+          From : "Stephen.lunapiena@gmail.com",
+          Subject : name+" has sent you a message",
+          Body : "Name:"+name+"Phone Number:"+email+"E-Mail"+subject+"Message:"+msg
+      }).then(
+        m => alert(m)
+      )};
+  }
 
 
 
