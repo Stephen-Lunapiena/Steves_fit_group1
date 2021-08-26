@@ -100,6 +100,11 @@ img {
     font-size: 1.2em;
 }
 
+#macroP {
+    font-size: 1.3em;
+}
+
+
 @media all and (max-width: 576px) {
     .container {
       display: flex;
