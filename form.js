@@ -16,7 +16,7 @@ var x = document.querySelector("#emailform")
       Email.send({
           Host: "smtp.gmail.com",
           Username : "projectest120@gmail.com", 
-          Password : "randompw",
+          Password : "blahblah12!@#$",
           To : 'projectest120@gmail.com',
           From : "Stephen.lunapiena@gmail.com",
           Subject : name + " has sent you a message",

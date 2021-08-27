@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    max-width: 100%;
+    word-break: break-word;
     background-color: #3E2C41;
     color: #6E85B2;
 }
@@ -15,7 +17,7 @@ img {
 
 .container {
     display: grid;
-    width: 97vw;
+    width: 98%;
     height: 70vw;
     gap: 5px;
     grid-template-columns: 1fr 150px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
